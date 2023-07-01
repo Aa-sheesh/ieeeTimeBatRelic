@@ -14,7 +14,6 @@ app.use(express.static("public"));
 app.get("/",function(req,res){
   const options = {};
   res.render("home.ejs", options);
-  console.log(req.body.name);
 })
 
 app.listen(3000, function() {
