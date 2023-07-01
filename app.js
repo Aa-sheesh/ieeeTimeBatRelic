@@ -16,13 +16,6 @@ app.get("/",function(req,res){
   res.render("home.ejs", options);
   console.log(req.body.name);
 })
-app.post("/", function(req,res) {
-  res.render("login.ejs");
-})
-app.get("/signup",function(req,res){
-  const options = {};
-  res.render("login.ejs", options);
-})
 
 app.listen(3000, function() {
     console.log("Server is up and running at port 3000!");
